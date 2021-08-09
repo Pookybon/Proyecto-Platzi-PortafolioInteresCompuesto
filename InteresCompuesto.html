@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Interes Compuesto</title>
+    <link rel="stylesheet" href="./InteresCompuesto.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Interes Compuesto</h1>
+    </header>
+    <main>
+        <div class="dataContainer">
+            <h2>Portafolio</h2>
+            <form id="activos">
+                <div class="activoContainer">
+                    <label class="activo-text">Monto Inicial</label>
+                    <div class="activoinput-container">
+                        <a class="activo-text">$</a>
+                        <input type="number" class="activo-input" id="montoInicial1" placeholder="1000">
+                    </div>
+                    <label class="activo-text">Porcentaje de Rendimiento Anual</label>
+                    <div class="activoinput-container">
+                        <a class="activo-text">%</a>
+                        <input type="number" class="activo-input" id="porcentajeInteres1" value="7">
+                    </div>
+                </div>
+            </form>
+            <button class="boton" id="boton-añadirActivo" onclick="añadirActivo()">Añadir Activo</button>
+        </div>
+        <div class="graphContainer">
+            <div class="yearsContainer">
+                <p>Años de inversion</p>
+                <input class="activo-input" type="number" id="añosInversion" value="10">
+            </div>
+            <div class="contenedorResultados" id="resultadosTemporales">
+                <p>Total al finalizar el plazo</p>
+                <p class="resultadoCalculo" id="Total" ></p>
+                <p>Total por inversion</p>
+                <p class="resultadoCalculo" id="inversion1"></p>
+            </div>
+            <p>Proximamente una grafica ira aqui</p>
+        </div>
+    </main>
+    <script id="javascript" src="./InteresCompuesto.js"></script>
+</body>
+</html>
